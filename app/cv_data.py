@@ -14,13 +14,13 @@ cv_data = {
         {
             "company": "Cegeka (Digi Belgium)",
             "role": "Odoo Developer",
-            "duration": "July 2024 – Present",
+            "duration": "July 2024 - Present",
             "description": "Working on internal Odoo development for Digi Belgium."
         },
         {
             "company": "nShift",
             "role": "Python Developer",
-            "duration": "August 2021 – July 2024",
+            "duration": "August 2021 - July 2024",
             "description": (
                 "Contributed to development and maintenance of APIs for shipping carriers. "
                 "Created internal tools with Odoo 15, maintained AWS infrastructure, and improved EC2 server security."
@@ -29,7 +29,7 @@ cv_data = {
         {
             "company": "Next IT Solutions",
             "role": "Odoo Developer",
-            "duration": "September 2018 – August 2021",
+            "duration": "September 2018 - August 2021",
             "description": (
                 "Designed and developed 10+ Odoo apps and websites. "
                 "Configured EC2 servers for 15+ clients. "
@@ -39,7 +39,7 @@ cv_data = {
         {
             "company": "Next IT Solutions",
             "role": "Customer Service Technical Support",
-            "duration": "September 2016 – August 2021",
+            "duration": "September 2016 - August 2021",
             "description": (
                 "Provided 1st and 2nd line support, maintaining 90%+ satisfaction rate. "
                 "Handled user problems with a proactive resolution approach."
@@ -48,7 +48,7 @@ cv_data = {
         {
             "company": "CGS",
             "role": "Technical Support Specialist",
-            "duration": "March 2015 – September 2016",
+            "duration": "March 2015 - September 2016",
             "description": (
                 "Offered 1st and 2nd line support. Maintained high customer satisfaction and resolved user issues proactively."
             )
@@ -56,7 +56,7 @@ cv_data = {
         {
             "company": "Castel Film Studios",
             "role": "Various Roles",
-            "duration": "2013 – 2014",
+            "duration": "2013 - 2014",
             "description": (
                 "3rd Assistant Director for 'Nameless'. On-set production assistant for 'A Royal Christmas' and 'Walking with the Enemy'."
             )
@@ -66,7 +66,7 @@ cv_data = {
         {
             "institution": "Artifex University",
             "degree": "B.Sc. in Management-Marketing",
-            "year": "2009 – 2012"
+            "year": "2009 - 2012"
         }
     ],
     "skills": [
@@ -89,7 +89,7 @@ cv_data = {
     ],
     "certifications": [
         {
-            "name": "PCEP – Certified Entry-Level Python Programmer",
+            "name": "PCEP - Certified Entry-Level Python Programmer",
             "url": "https://www.credly.com/badges/13961e61-4146-4b76-a078-006f02d23835/linked_in_profile"
         },
         {

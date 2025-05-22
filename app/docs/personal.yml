@@ -1,0 +1,43 @@
+get:
+  summary: Get personal information
+  description: Returns personal contact information and summary
+  security:
+    - Bearer: []
+  parameters:
+    - name: token
+      in: query
+      type: string
+      required: false
+      description: Authentication token (alternative to Bearer header)
+  responses:
+    200:
+      description: Personal information object
+      schema:
+        type: object
+        properties:
+          name:
+            type: string
+            example: "Alexandru Ionut Gagea"
+          email:
+            type: string
+            example: "alexandrugagea@gmail.com"
+          phone:
+            type: string
+            example: "+40 737 512 634"
+          location:
+            type: string
+            example: "Romania"
+          linkedin:
+            type: string
+            example: "https://www.linkedin.com/in/alexandru-gagea-0a3b6377/"
+          summary:
+            type: string
+            example: "Python & Odoo Developer. Enjoys mountain hiking, skiing, and gaming."
+    401:
+      description: Unauthorized - Invalid or missing token
+      schema:
+        type: object
+        properties:
+          error:
+            type: string
+            example: "Unauthorized: Invalid or missing token"

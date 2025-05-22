@@ -19,26 +19,34 @@ docker compose version
 
 ### 1. Clone the repository or download manually
 
-git clone https://github.com/YOUR_USERNAME/flask-cv-app.git
+git clone https://github.com/AlexandruGagea/flask-cv-app.git
 cd flask-cv-app
 
 ### 2. Build and run the application
 
+docker compose build
 docker compose up
 
 ### 3. Access the application
 
 Open your browser and navigate to :
 
-http://localhost:5000/personal
-http://localhost:5000/education
-http://localhost:5000/experience
+http://localhost:5000/personal?token=supersecrettoken123
+
+http://localhost:5000/education?token=supersecrettoken123
+
+http://localhost:5000/experience?token=supersecrettoken123
+
 
 ### 4. Use the CLI command
 
 Run the following command:
 
 docker compose run flask_cv flask print-cv
+
+### 5. Use the available Postman collection 'Flask_CV_APP.postman_collection.json'
+
+### 6. Check the Swagger documentation at http://localhost:5000/apidocs
 
 
 
