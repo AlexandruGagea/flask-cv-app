@@ -8,5 +8,6 @@ def create_app():
     register_cli(app)
     
     app.config["JSONIFY_PRETTYPRINT_REGULAR"] = True
+    app.config["AUTH_TOKEN"] = "supersecrettoken123"
 
     return app

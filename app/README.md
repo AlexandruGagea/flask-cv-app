@@ -16,3 +16,32 @@ Everything runs inside Docker — no need to install Python or Flask on your mac
 >  Confirm by running:
 
 docker compose version
+
+### 1. Clone the repository or download manually
+
+git clone https://github.com/YOUR_USERNAME/flask-cv-app.git
+cd flask-cv-app
+
+### 2. Build and run the application
+
+docker compose up
+
+### 3. Access the application
+
+Open your browser and navigate to :
+
+http://localhost:5000/personal
+http://localhost:5000/education
+http://localhost:5000/experience
+
+### 4. Use the CLI command
+
+Run the following command:
+
+docker compose run flask_cv flask print-cv
+
+
+
+
+
+

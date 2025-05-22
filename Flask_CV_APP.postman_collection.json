@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "3f2eea7a-a9fe-4bf5-93cd-f36c90faa14a",
+		"name": "Flask CV APP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13886584"
+	},
+	"item": [
+		{
+			"name": "Personal Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/personal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"personal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Education",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "supersecrettoken123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Experience",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/experience",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"experience"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
