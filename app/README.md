@@ -48,7 +48,9 @@ docker compose run flask_cv flask print-cv
 
 ### 6. Check the Swagger documentation at http://localhost:5000/apidocs
 
+### 7. To run tests inside the Docker container:
 
+docker compose exec flask_cv pytest
 
 
 

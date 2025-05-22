@@ -1,6 +1,6 @@
 from flask import Flask
 from .routes import api
-from .cli import register_cli
+from .cli import print_cv
 from flasgger import Swagger
 
 swagger_template = {
@@ -23,7 +23,7 @@ swagger_template = {
 def create_app():
     app = Flask(__name__)
     app.register_blueprint(api)
-    register_cli(app)
+    app.cli.add_command(print_cv)
     
     app.config["JSONIFY_PRETTYPRINT_REGULAR"] = True
     app.config["AUTH_TOKEN"] = "supersecrettoken123"
