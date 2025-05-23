@@ -6,7 +6,7 @@ get:
       in: query
       type: string
       required: false
-      description: Bearer token for authentication (or use header)
+      description: Bearer token (or use Authorize button)
   responses:
     200:
       description: Success
@@ -24,8 +24,8 @@ get:
                 year:
                   type: string
           example:
-            - institution: "Artifex University"
-              degree: "B.Sc. in Management-Marketing"
-              year: "2009 – 2012"
+            - institution: Artifex University
+              degree: B.Sc. in Management-Marketing
+              year: 2009 – 2012
     401:
       description: Unauthorized

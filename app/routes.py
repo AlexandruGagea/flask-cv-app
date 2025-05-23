@@ -1,8 +1,9 @@
+import os
 from flask import Blueprint, jsonify, request, abort, current_app
 from .cv_data import cv_data
-from .utils import doc_auth
+from flasgger import swag_from
 
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 api = Blueprint('api', __name__)
 
 @api.before_request
@@ -17,16 +18,16 @@ def authenticate():
     abort(401, description="Unauthorized: Invalid or missing token")
 
 @api.route("/personal")
-@doc_auth("docs/personal.yml")
+@swag_from(os.path.join(BASE_DIR, "../docs/personal.yml"))
 def personal():
     return jsonify(cv_data["personal"])
 
 @api.route("/experience")
-@doc_auth("docs/experience.yml")
+@swag_from(os.path.join(BASE_DIR, "../docs/experience.yml"))
 def experience():
     return jsonify(cv_data["experience"])
 
 @api.route("/education")
-@doc_auth("docs/education.yml")
+@swag_from(os.path.join(BASE_DIR, "../docs/education.yml"))
 def education():
     return jsonify(cv_data["education"])
