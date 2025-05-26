@@ -37,7 +37,7 @@ docker compose version
 
 3. **Verify it's running**
    
-   The application will be available at `http://localhost:5000`
+   The application will be available at `http://127.0.0.1:5000/?token=supersecrettoken123`
 
 ---
 

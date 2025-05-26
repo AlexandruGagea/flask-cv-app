@@ -1,5 +1,5 @@
 import os
-from flask import Blueprint, jsonify, request, abort, current_app
+from flask import Blueprint, jsonify, request, abort, current_app, render_template, redirect, url_for
 from .cv_data import cv_data
 from flasgger import swag_from
 
@@ -16,6 +16,10 @@ def authenticate():
     if token_header == expected or token_query == expected_raw:
         return
     abort(401, description="Unauthorized: Invalid or missing token")
+
+@api.route("/")
+def homepage():
+    return render_template("index.html")
 
 @api.route("/personal")
 @swag_from(os.path.join(BASE_DIR, "../docs/personal.yml"))

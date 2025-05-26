@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Alexandru Gagea - Flask CV API</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 600px;
+            margin: 2rem auto;
+            line-height: 1.6;
+        }
+        h1 {
+            border-bottom: 1px solid #ddd;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flask CV API</h1>
+    <p>Welcome to Alexandru Gagea's Flask CV API. You can access the following endpoints:</p>
+    <ul>
+        <li><a href="/personal?token=supersecrettoken123">/personal</a></li>
+        <li><a href="/education?token=supersecrettoken123">/education</a></li>
+        <li><a href="/experience?token=supersecrettoken123">/experience</a></li>
+        <li><a href="/apidocs">Swagger UI</a></li>
+    </ul>
+    <p>Note: Use the <code>token=supersecrettoken123</code> query parameter or Bearer token to access protected routes.</p>
+</body>
+</html>

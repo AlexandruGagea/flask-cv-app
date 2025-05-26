@@ -1,12 +1,15 @@
 get:
   summary: Get education history
   description: Returns a list of academic qualifications
+  security:
+    - Bearer: []
   parameters:
     - name: token
       in: query
-      type: string
       required: false
-      description: Bearer token (or use Authorize button)
+      description: Bearer token for authentication
+      schema:
+        type: string
   responses:
     200:
       description: Success
@@ -23,9 +26,3 @@ get:
                   type: string
                 year:
                   type: string
-          example:
-            - institution: Artifex University
-              degree: B.Sc. in Management-Marketing
-              year: 2009 – 2012
-    401:
-      description: Unauthorized
